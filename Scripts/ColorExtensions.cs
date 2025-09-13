@@ -4,6 +4,10 @@ namespace Codomaster.Extensions
 {
     public static class ColorExtensions
     {
+        
+        public const float ALPHA_OPAQUE = 1.0f;
+        public const float ALPHA_TRANSPARENT = 0.0f;
+        
         /// <summary>
         /// Set value to color's channel.
         /// </summary>
