@@ -381,6 +381,18 @@ namespace Codomaster.Extensions
         {
             return new Vector3(Mathf.Clamp(vector.x, min, max), Mathf.Clamp(vector.y, min, max), Mathf.Clamp(vector.z, min, max));
         }
+        
+        /// <summary>
+        /// Clamp chaque composante du Vector3 entre les valeurs min et max correspondantes.
+        /// </summary>
+        public static Vector3 Clamp(this Vector3 value, Vector3 min, Vector3 max)
+        {
+            return new Vector3(
+                Mathf.Clamp(value.x, min.x, max.x),
+                Mathf.Clamp(value.y, min.y, max.y),
+                Mathf.Clamp(value.z, min.z, max.z)
+            );
+        }
 
         /// <summary>
         /// Creates and returns a vector whose components are limited to 0 and 1.
